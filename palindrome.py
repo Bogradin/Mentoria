@@ -16,7 +16,10 @@ class Solution(object):
             left = left + x[i]
             right = right + x[-i - 1]
             #if left and right != define the biggest palindrome possible and break out
+            #i == 0 is not a palindrome, as it only has one letter
             if (left != right):
+                if (i == 0):
+                    return "there are no palindromes possible"
                 biggest = left
                 break       
         return biggest
