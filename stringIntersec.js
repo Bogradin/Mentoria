@@ -4,7 +4,7 @@ var stringIntersec = function(s) {
     let intersec = [];
 
     while (first.length && second.length) {
-        if (first[0] < right[0]) {
+        if (first[0] < second[0]) {
             intersec.push(first.shift())
         } else {
             intersec.push(second.shift())
